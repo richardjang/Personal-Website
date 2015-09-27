@@ -1,0 +1,387 @@
+<html>
+<head>
+<title> Richard Jang | ABOUTME</title>
+<link rel="shortcut icon" href="images/circlelogo.png" />
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel ="stylesheet" type = "text/css" href ="aboutme.css"/>
+<link rel ="stylesheet" href ="bootstrap/bootstrap.min.css">
+<!-- BAD IDEA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+
+
+
+<!-- BAD IDEA -->
+
+<!-- SMOOTH SCROLL SCRIPT LINKS -->
+    <!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+
+
+<!-- ICON ANIMATION -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- BAD IDEA -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+				
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">HOME</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"> </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#maincontent">EDUCATION</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#experience">SKILLS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#secondtothird">EXPERIENCE</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#footwrap">RESUME</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+
+
+<!--Fade in Content-->
+<script language="jquery" type = "text/javascript">
+$(function() {
+    $(window).scroll( function(){
+    
+       
+        $('.fadeInBlock').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 125;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+        }); 
+    
+    });
+});
+
+</script>
+
+<script language="jquery" type = "text/javascript">
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+<!-- HEADER AND LOGO -->
+
+<div id ="headers">
+		<a href =".">
+			<img id = "spin2" src = "images/circlelogo.png" style ="	position: fixed;top: 100px;left: 45px;z-index: 1000;"class ="spin"></img>
+		</a>
+
+		<div style = " margin: 0 auto; text-align: center;" >
+			<h1 class = "namePos" > ABOUT<span style = "Font-family: SourceSansBlack; color: #DD6424">ME</span><br> - <br><p style = "font-size: 20px;">A little bit about me...</p></h1>
+		</div>
+	
+		
+
+</div>
+
+
+
+
+<div id="maincontent">
+	
+		
+		<div class = "superone">
+			<!-- FIRST BLOCK-->
+			<div id = "first" > 
+				<div id ="contentleftone">
+				<!--Left content-->		
+				</div>
+				
+				<div id ="contentmidone">
+					<div id ="intro"class="fadeInBlock">
+						<!--<img style= "margin-top: 75px; margin-bottom: 20px;"src="images/sjsulogo_burned.png" ></img>-->
+						<img style= "margin-top: 75px; margin-bottom: 20px;" src="images/sparta.png" ></img>
+					
+						<h1 style = "font-family: SourceSansProIt ; color:black; ">Computer Engineering<br><spanstyle = "font-size: 25px; font-family: SourceSansProIt; color: black;">student </span><br><span style = "font-size: 20px; font-family: SourceSansProIt; color: black;">Class of 2017</span></h1> 
+						<!--
+						<p style = "font-size: 25px; font-family: SourceSansProIt; color: black;">student </p>
+						<p style = "font-size: 20px; font-family: SourceSansProIt; color: black;">Class of 2016 </p>
+						-->
+						<!--<a href = "inProgress.html"><p style = "font-size: 35px; font-family: SourceSansProIt; color:#DD6424; ;" class = "hvr-underline-from-center"> ABOUT ME&#8594; </p></a>-->
+						
+						
+						
+					</div>
+					
+				</div>
+				
+				<div  id ="contentrightone">
+				<!--rightcontent-->
+				</div>
+			
+			</div>
+		</div>	
+		
+		
+			<div id = "firsttosecond">
+			
+				<div id ="experience"></div>
+					<div id = "superblockone" class = "supertwo">
+					<p style="font-size: 40; font-family: SourceSansProIt; color: black;" class="fadeInBlock">S K I L L S<br><span style ="font-size: 20px; color:black;"class="fadeInBlock">Software</span></p>
+					
+					
+					<div id ="leftcode" class="fadeInBlock">
+					<img style = "height: 200px;  width: 200px;"src ="images/language/cplusplus.jpg"></img>
+					</div>
+					
+					<div id = "rightcode" class="fadeInBlock">
+					<img style = "height: 200px;  width: 200px;"src ="images/language/C.png"></img>
+					</div>
+						<div id ="leftcode"class="fadeInBlock" >
+					<img style = "height: 200px;  width: 200px;"src ="images/language/python.png"></img>
+					</div>
+					
+					<div id = "rightcode"class="fadeInBlock" >
+					<img style = "height: 200px;  width: 200px;"src ="images/language/swift.png"></img>
+					</div>
+						<div id ="leftcode"class="fadeInBlock" >
+					<img style = "height: 200px;  width: 400px;"src ="images/language/js.png"></img>
+					</div>
+					
+					<div id = "rightcode"class="fadeInBlock">
+					<img style = "height: 200px;  width: 200px;"src ="images/language/sql.png" ></img>
+					</div>
+					
+					<!--
+					<a href = "inProgress.html" id ="toProjects"	>	
+						<p   style = " font-size: 35px; vertical-align: center; color: #DD6424;; font-family: SourceSansProIt" class = "hvr-underline-from-center"> PROJECTS &#8594; </p>
+					</a>
+					-->
+				</div>	
+					
+					
+			
+			</div> 
+				
+			
+			
+			
+			<!-- Empty Space between first and second block-->
+			<div id = "secondtothird" style =" background-color: transparent;" >
+			
+				<div id ="experience"></div>
+				<p style = "font-family: SourceSansProIt;" class="fadeInBlock">E X P E R I E N C E </p>
+				
+			</div> 
+			
+			<!-- SECOND BLOCK-->
+		<div class = "superqa">	
+			<div id = "first" class="fadeInBlock"> 
+				<div id ="contentleftone">
+					<p style = "font-size: 40px; margin-top: 70px; font-family: SourceSansProIt;" class="fadeInBlock">8x8, Inc.</p>
+				</div>
+				
+				<div id ="contentmidone">
+					<img style = " height: 200px; width: 200px; "src = "images/8x8.jpg" class="fadeInBlock"></img>
+				</div>
+				
+				<div id ="contentrightone">
+				<p style = "font-size: 30px; margin-top: 50px; font-family: SourceSansProIt" class="fadeInBlock">Software Quality Assurance<br> Engineering Intern</p>
+				<p style = "font-size: 15px; font-family: SourceSansProIt " class="fadeInBlock">June 2015 - August 2015</p>	
+				</div>
+			</div>	
+		</div>	
+			<!--THIRD BLOCK -->
+		<div class ="superqa">	
+			<div id = "first" class="fadeInBlock"> 
+				<div id ="contentleftone">
+					<p style = "font-size: 40px; margin-top: 90px; font-family: SourceSansProIt" class="fadeInBlock">Richard's <br> Drum Studio</p>
+				</div>
+				
+				<div id ="contentmidone">
+					<img src= "images/drum.png" style = "height:200px; width: 200px;" class="fadeInBlock"> </img>
+				</div>
+				
+				<div id ="contentrightone">
+					<p style = "font-size: 30px; margin-top: 75px; font-family: SourceSansProIt" class="fadeInBlock">Founder - Teacher<br> Player</p>
+					<p style = "font-size:15px font-family: SourceSansProIt" class="fadeInBlock">January 2012 - Present </p>
+				</div>
+			</div>
+		</div>	
+			
+			<!-- FOURTH BLOCK -->
+		<div class = "superqa">	
+			<div id = "first" class="fadeInBlock"> 
+				<div id ="contentleftone">
+					<p style = "font-size: 40px; margin-top: 40px; font-family: SourceSansProIt" class="fadeInBlock">Charles Davidson<br>College of Engineering</p>
+				</div>
+				
+				<div id ="contentmidone">
+					<img src="images/sjsu.gif" class="fadeInBlock"> </img>
+				</div>
+				
+				<div id ="contentrightone">
+					<p style = "font-size: 30px; margin-top: 50px; font-family: SourceSansProIt" class="fadeInBlock">Instructional Student Assistant</p>
+					<p style = "font-size: 25px; font-family: SourceSansProIt" class="fadeInBlock">C++ Tutor</p>
+					<p style = "font-size:15px; font-family: SourceSansProIt" class="fadeInBlock">August 2015 - Present</p>
+				</div>
+			</div>
+		</div>
+			
+		<div class = "superqa">	
+			<!-- FIFTH BLOCK -->
+			<div id = "first" class="fadeInBlock"> 
+				<div id ="contentleftone">
+					<p style = "font-size: 40px; margin-top: 60px; font-family: SourceSansProIt" class="fadeInBlock">SJSU Bridge<br>Peer Mentoring</p>
+				</div>
+				
+				<div id ="contentmidone">
+					<img style = "height: 300px; width: 400px; "src="images/bridge.jpg" class="fadeInBlock"> </img>
+				</div>
+				
+				<div id ="contentrightone">
+					<p style = "font-size: 30px; margin-top: 70px; font-family: SourceSansProIt" class="fadeInBlock">Computer Engineering Coordinator</br>Website Moderator</p>
+					
+					<p style = "font-size:15px font-family: SourceSansProIt" class="fadeInBlock">August 2015 - Present</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class = "superqa">	
+			<!-- SIXTH BLOCK-->
+			<div id = "first" class="fadeInBlock"> 
+				<div id ="contentleftone">
+					<p style = "font-size: 40px; margin-top: 60px; font-family: SourceSansProIt" class="fadeInBlock">Tau Beta Pi<br><span style = "font-size: 25px;"> Engineering Honor Society</span></p>
+				</div>
+				
+				<div id ="contentmidone">
+					<img style = "height: 250px; width: 200px; "src="images/tbp.gif" class="fadeInBlock"> </img>
+				</div>
+				
+				<div id ="contentrightone">
+					<p style = "font-size: 30px; margin-top: 70px; font-family: SourceSansProIt" class="fadeInBlock">Member</p>
+					
+					<p style = "font-size:15px font-family: SourceSansProIt" class="fadeInBlock">Initiation in Progress</p>
+				</div>
+			</div>
+		</div>
+			
+			
+			
+</div>
+
+<div id ="foot" >
+
+	
+	<div id = "footwrap">
+		
+
+		<div style ="height: 150px; width: 100px;"> </div> 
+		<div>
+			<img src = "images/circlelogo.png"></img>
+		</div>
+		
+		
+		<div id = "personalinks" >
+			<p class = "faded">
+				<a href="https://www.linkedin.com/pub/richard-jang/63/85/67b" style= "color: white;">LINKEDIN </a>
+				
+				<!--<a href = "https://github.com/richardjang" style ="color: white;" >GITHUB</a>-->
+				
+				<a href = "resume/Job_Resume_.docx" style= "color: white" download>RESUME</a>
+			<p>	
+		</div>
+		
+		<div id = "mail">
+			<a href = "mailto: richardjangprof@gmail.com" > 
+				<img style = "height: 25px; width: 25px; "src ="images/mail.png" class = "faded"> </img> 
+			</a>
+		
+		</div>
+
+		
+	</div>
+
+</div> 
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+
+
+</html>

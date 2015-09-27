@@ -1,0 +1,346 @@
+<html>
+<head>
+<title> Richard Jang | Computer Engineer - Musician - Athlete </title>
+<link rel="shortcut icon" href="images/circlelogo.png" />
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel ="stylesheet" type = "text/css" href ="grid.css"/>
+<link rel ="stylesheet" href ="bootstrap/bootstrap.min.css">
+<!-- BAD IDEA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+	
+	<!-- THIS IS FOR GRID ZOOM EFFECT -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+		<link rel="stylesheet" type="text/css" href="css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="css/set2demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set2normalize.css" />
+		
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
+
+		
+		<!--THIS IS FOR A MENU-->
+
+
+</head>
+
+<body>
+<!-- BAD IDEA -->
+<!--Fade in Content-->
+<script language="jquery" type = "text/javascript">
+$(function() {
+    $(window).scroll( function(){
+    
+       
+        $('.fadeInBlock').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 125;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+        }); 
+    
+    });
+});
+
+</script>
+
+
+<script language="jquery" type = "text/javascript">
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+
+<!-- HEADER AND LOGO -->
+
+<div id ="headers">
+		<a href =".">
+			<img id = "spin2" src = "images/circlelogo.png" style ="	position: fixed;top: 100px;left: 45px;z-index: 1000;"class ="spin"></img>
+		</a>
+
+		<div style = " margin: 0 auto; text-align: center;" >
+			<h1 class = "namePos" ><span style = "font-family: SourceSansBlack; color: #DD6424; ">RICHARD</span>JANG <br> </h1>
+<!--
+		<a style = "position: fixed; bottom: 25%; " href = "#maincontent">
+				<img src = "images/arrow.png" style = "width: 70px; height: 70px; "></img>
+		</a>
+-->
+
+			<div style = "position: fixed; bottom: 25%; width: 100%; ">
+			<a href="#maincontent" style = "font-size: 30px; text-decoration: none; z-index: 10;">
+				<div class="button-2">
+				<div class="eff-2"></div>
+					<a href="#maincontent" style = "font-size: 30px; text-decoration: none; z-index: 10;">&#8595; </a>
+				</div>
+			</a>	
+			</div>
+			</div>
+			
+			<!--<span style = "color: #DD6424;">-->
+
+			
+		</div>
+
+</div>
+
+
+
+
+<div id="maincontent" style = "position: relative"\>
+
+
+		<div >
+			
+			<div id = "first"> 
+			<!--style ="background-image: url(images/sjsugrid1.png); background-size: cover;"-->
+			<!--<div   class = "sjsugrid1" id ="contentleftone">-->
+				<div   style = "overflow: hidden;"id = "contentleftone" >
+				
+					<!--
+						<img  style = "opacity: 0.8; position:relative;"src = "images/sjsugrid1.png"></img>
+						<p style = "color: #DD6424; position: absolute; text-align: center; width: 100%; top: 20%; font-Size: 40px; font-family: SourceSansBlack; "> San Jose State University<br><span style = "color: white; font-family: SourceSansProIt;">Class of 2016<span></p>
+					-->
+					<div class="grid">
+								<figure class="effect-lily">
+									<img src="images/sjsuhd.png" alt="img12"/>
+									<figcaption>
+										<div>
+											<h2>San Jose <span style = "color: #DD6424;">State University</span></h2>
+											<p >Class of 2017</p>
+										</div>
+										
+									</figcaption>			
+								</figure>
+					
+					</div>					
+				</div>
+				
+				<div  style = "color:white; overflow: hidden;" class ="grow" id ="contentmidone">
+					<!--	<img  style = "opacity: 0.5;"src = "images/coding.png"> asdfadsfadsfasd</img>-->
+					
+				<div class="grid2">
+					<figure class="effect-julia">
+						<img src="images/binary.png" alt="img22"/>
+						<figcaption>
+							<h2>Software <span style = "color: #DD6424">Projects</span></h2>
+							<div>
+							
+								<p>Multi-speed MicroController Fan (C, Microcontrollers)</p>
+								<p>Real Estate Machine Learning Website (HTML, CSS, Javascript)</p>
+								<p>Virtual Paging and Networks (C, Linux)             </p>
+								<p>Personal Website (Html, CSS, Javascript)           </p>
+								<p>Vex Robot beacon retrieval (C)               </p>
+								<p>Street Light Simulation (C++)</p>
+								
+								
+								
+							</div>
+							
+						</figcaption>			
+					</figure>
+				</div>
+					
+				</div>
+				
+				<div style ="text-align: left; background-color: #161616; color:white; font-family: SourceSansProIt;" class = "darken"  id ="contentrightone">
+					<h1 style = "margin-top: 17%; margin-left: 10%; "  ><span style ="color: #DD6424; font-family: SourceSansBlack;">MY</span>Philosophy</h1>
+					<p style = "margin-left: 10%; font-size: 25px;"> - <br><span style = "color:#DD6424; ">Live </span> your Life <span style = "color:#DD6424; ">Today</span>, as to Not have <span style = "color:#DD6424; ">Regret Tomorrow</span></p> 
+				</div>
+			
+			</div>
+		</div>	
+		
+		<div >
+			
+			<div id = "first"  class = "fadeInBlock" > 
+				<div style = "font-family:SourceSansProIt; background-color: #DD6424; color: white; text-align: left;" class ="darken" id ="contentleftone">
+					<h1 style = "margin-top: 20%; margin-left: 15%; ">ABOUT<span style = "font-family: SourceSansBlack">ME</span></h1>
+					<p style = "margin-left: 15%; font-size: 20px" ><span style = "font-size: 30px;"> - </span><br>Computer Engineer<br>Drummer<br>Bar Athlete</p>
+				</div>
+				
+				<div  style = "color:white; overflow: hidden;" class ="grow" id ="contentmidone">
+							<!--<img  style = "opacity: 0.5;"src = "images/drumbw.jpg"> asdfadsfadsfasd</img>-->
+							<!--<p style = "color: #DD6424; position: absolute; text-align: center; width: 100%; top: 20%; font-Size: 40px; font-family: SourceSansBlack; ">Drum Set Player - Teacher<br><span style = "color: white; font-family: SourceSansProIt;">Class of 2016<span></p>-->
+				<div class="grid">
+					<figure class="effect-milo">
+						<img src="images/drumbw.jpg" alt="img11"/>
+						<figcaption>
+							<h2>Musical <span style = "color: #DD6424">Passion</span></h2>
+							<p>Percussionist<br> DrumSet<br> Teacher</p>
+							
+						</figcaption>			
+				</div>
+					
+				</div>
+				
+				<div  style = "color:white; overflow: hidden;" class = "grow" id ="contentrightone">
+					<!--<img  style = "opacity: 0.5;"src = "images/digital.jpg"> asdfadsfadsfasd</img>-->
+				<div class="grid2">
+					<figure class="effect-ming">
+						<img src="images/digital.jpg" alt="img09"/>
+						<figcaption>
+							<h2>Hardware <span style = "color: #DD6424">Projects</span></h2>
+							<p>COMING SOON!</p>
+							
+						</figcaption>			
+					</figure>
+			
+				</div>
+							
+						
+				</div>
+			
+			</div>
+		</div>
+		
+		
+		<div style = "clear: both;" id = "second" > 
+			
+				<div style = "color: white; font-family: SourceSansProIt; text-align: left;"  id ="aboutme">
+				<h1 style = "font-size: 75px; margin-top: 15%; margin-left: 10%;"><span style = "font-family: SourceSansBlack;">RICHARD</span>JANG<br> <span style = "font-size: 90px;">- </span></h1>
+				<p style = "margin-left: 10%; font-size: 20px;">I am a 4th year <span style ="color: #DD6424">Computer Engineering</span> Student at San Jose State University. <br> I want to prove that through <span style = "color:#DD6424">dedication</span> anything is possible.</p>	
+				
+				<!--<a href = "scrolltest.html">-->
+				<!--
+				<div style = "float: right; margin-right: 20%; margin-top: 10%; width: 150px; height: 50px;border: solid #DD6424; text-align: center;">
+				<p style ="color: #DD6424; margin-top: 7px; font-size: 20px;">About &#8594;</p>
+				</div>
+				-->
+				
+				<div style = "float: right; margin-right: 30%; margin-top: 35px;"class="button-3">
+						<div class="eff-3"></div>
+							<a style = "text-decoration:none" href="aboutme.html"> About Me &#8594;</a>
+				</div>
+				<!--</a>-->
+				</div>
+				
+				<div style = "overflow: hidden" class = "growstreet" id = "temp">
+					<!--
+					<img  src = "images/streetworkout.jpg"/>
+					<!--
+					<div class="gridstreetworkout">
+					<figure class="effect-zoe">
+						<img src="images/streetworkout.jpg" alt="img25"/>
+						<figcaption>
+							<h2>Street<span>Workout</span></h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a href="#"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">Zoe never had the patience of herF sisters. She deliberately punched the bear in his face.</p>
+						</figcaption>			
+					</figure>
+				</div>
+					-->
+					
+					<div class="grid2">
+						<figure class="effect-winston">
+							<img src="images/streetworkout.jpg" alt="img30"/>
+							<figcaption>
+								<h2>Street<span style ="color: #DD6424;">Workout</span></h2>
+								<p>
+									<a href="#"><i class="fa fa-fw fa-star-o"></i></a>
+									<a href="#"><i class="fa fa-fw fa-comments-o"></i></a>
+									<a href="#"><i class="fa fa-fw fa-envelope-o"></i></a>
+								</p>
+							</figcaption>			
+						</figure>
+			
+					</div>	
+				</div>
+			
+		</div>
+		
+		<div style =" clear: both;"id = "third">
+			<div style = "color: white;"id = "content">
+		
+			
+			</div>
+		
+		
+		</div>
+		
+
+<div id ="foot" >
+
+	
+	<div id = "footwrap">
+		
+
+		<div style ="height: 150px; width: 100px;"> </div> 
+		<div>
+			<img src = "images/circlelogo.png"></img>
+		</div>
+		
+		
+		<div id = "personalinks" >
+			<p class = "faded">
+				<a href="https://www.linkedin.com/pub/richard-jang/63/85/67b" style= "color: white;">LINKEDIN </a>
+				
+				<!--<a href = "https://github.com/richardjang" style ="color: white;" >GITHUB</a>-->
+				
+				<a href = "resume/Job_Resume_.docx" style= "color: white" download>RESUME</a>
+			<p>	
+		</div>
+		
+		<div id = "mail">
+			<a href = "mailto: richardjangprof@gmail.com" > 
+				<img style = "height: 25px; width: 25px; "src ="images/mail.png" class = "faded"> </img> 
+			</a>
+		
+		</div>
+
+		
+	</div>
+
+</div> 
+		
+		
+
+
+			
+
+</div>
+
+
+
+
+</body>
+
+
+
+</html>
